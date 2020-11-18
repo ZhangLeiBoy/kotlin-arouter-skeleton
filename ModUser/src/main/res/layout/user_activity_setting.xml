@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_main"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dip"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_auth" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="管理认证" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_cash" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="收银" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_capital" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="资金" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_about" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="关于" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_contact" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="联系我们" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="12dp"
+                    android:text="400-400-5888" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

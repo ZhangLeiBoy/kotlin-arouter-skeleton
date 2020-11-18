@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="shape_start">#008577</color>
+    <color name="shape_end">#00574B</color>
+
+
+    <color name="white">#ffffff</color>
+    <!-- 透明-->
+    <color name="transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="app_bg_card">#ffffff</drawable>
+    <color name="app_bg_card">#ffffff</color>
+    <color name="app_bg_main">#f8f8f8</color>
+    <!-- 半透明 -->
+    <color name="translucent">#80000000</color>
+
+
+    <!-- 全局主色调-->
+    <color name="app_main_color">#008577</color>
+    <!-- 不可点击状态，与主色调对应-->
+    <color name="app_main_color_uncheck">#aac8e9</color>
+
+    <color name="app_line_color">#e4e4e4</color>
+
+    <color name="app_text_hint">#a6a6a6</color>
+    <color name="app_text_main">#333333</color>
+    <color name="app_text_4f">#4f4f4f</color>
+    <color name="app_text_second">#8190a7</color>
+    <color name="app_text_second_unckeck">#d0d3d5</color>
+    <color name="app_text_grey">#999999</color>
+    <color name="app_text_666">#666666</color>
+    <color name="app_text_tip">#b4b4b4</color>
+
+    <color name="app_nav_bg">#ffffff</color><!-- actionBar 背景色 -->
+    <color name="app_nav_bg_reporttopic">#2DC4E8</color><!-- 2DC4E8 -->
+    <color name="app_nav_bg_topic">#2455c1</color><!-- 2455C1 -->
+    <color name="app_nav_title">#ffffff</color><!-- actionBar title 颜色 -->
+    <color name="app_nav_second_text">@color/app_main_color</color><!-- 文本颜色 如保存 取消之类的 -->
+    <color name="app_nav_second_text_uncheck">#d0d3d5</color><!-- 文本颜色 如保存 取消之类的不可点击效果 -->
+
+</resources>

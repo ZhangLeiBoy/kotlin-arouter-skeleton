@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_main"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dip"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_bg_home" />
+
+        <com.member.card.assistant.view.roundediv.RoundedImageView
+            android:id="@+id/riv_head"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_default_head"
+            app:riv_oval="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/riv_head"
+            android:layout_alignBottom="@+id/riv_head"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/riv_head"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="金陵第一"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_tel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="18888888888"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <com.member.card.assistant.view.ShadowLayout
+            android:id="@+id/sdl_top"
+            style="@style/home_shadow_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/riv_head"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:text="今日收款"
+                    android:textColor="@color/app_text_main"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="￥5000.00"
+                    android:textColor="@color/app_text_main"
+                    android:textSize="36sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="6dp"
+                    android:text="查看明细"
+                    android:textColor="@color/app_main_color"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/app_line_color" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="12dp"
+                        android:text="余额：￥1000.00"
+                        android:textColor="@color/app_text_666" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="12dp"
+                        android:text="资金管理/提现"
+                        android:textColor="@color/app_main_color" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </com.member.card.assistant.view.ShadowLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdl_top"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="55dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_auth" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="店铺管理" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_cash" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="收银员" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_capital" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="资金管理" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_about" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="关于" />
+
+                <ImageView style="@style/home_info_item_enter" />
+
+            </LinearLayout>
+
+            <View style="@style/home_info_line" />
+
+            <LinearLayout style="@style/home_info_item_layout">
+
+                <ImageView
+                    style="@style/home_info_item_iv"
+                    android:src="@drawable/icon_info_contact" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:text="联系我们" />
+
+                <TextView
+                    style="@style/home_info_item_text"
+                    android:gravity="end|center_vertical"
+                    android:paddingEnd="12dp"
+                    android:text="400-400-40000" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

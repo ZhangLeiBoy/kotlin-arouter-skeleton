@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg_main"
+    android:fadingEdge="none"
+    android:fadingEdgeLength="0dip"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_bg_home" />
+
+        <com.member.card.assistant.view.ShadowLayout
+            android:id="@+id/sdl_top"
+            style="@style/home_shadow_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_marginBottom="35dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:text="总会员"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="2800"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="今日+90"
+                        android:textColor="@color/app_text_666"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:text="总充值"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="50000"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="今日+900"
+                        android:textColor="@color/app_text_666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="4dp"
+                        android:text="营业额"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="500.00"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="今日+128.00"
+                        android:textColor="@color/app_text_666"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.member.card.assistant.view.ShadowLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdl_top"
+            android:orientation="vertical">
+
+            <com.member.card.assistant.view.ShadowLayout
+                style="@style/home_shadow_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/home_left_info1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="29dp"
+                    android:paddingEnd="22dp">
+
+                    <ImageView
+                        android:id="@+id/home_left_icon1"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/icon_home_left_scan"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="扫一扫"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon1"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter1"
+                        app:layout_constraintTop_toTopOf="@+id/home_left_icon1" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="扫码xx"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/home_left_icon1"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon1"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter1" />
+
+                    <ImageView
+                        android:id="@+id/home_left_enter1"
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/icon_entry"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.member.card.assistant.view.ShadowLayout>
+
+
+            <com.member.card.assistant.view.ShadowLayout
+                style="@style/home_shadow_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/home_left_info2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="29dp"
+                    android:paddingEnd="22dp">
+
+                    <ImageView
+                        android:id="@+id/home_left_icon2"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/icon_home_left_vip"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="会员卡"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon2"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter2"
+                        app:layout_constraintTop_toTopOf="@+id/home_left_icon2" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="会员权益"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/home_left_icon2"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon2"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter2" />
+
+                    <ImageView
+                        android:id="@+id/home_left_enter2"
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/icon_entry"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.member.card.assistant.view.ShadowLayout>
+
+
+            <com.member.card.assistant.view.ShadowLayout
+                style="@style/home_shadow_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/home_left_info3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="29dp"
+                    android:paddingEnd="22dp">
+
+                    <ImageView
+                        android:id="@+id/home_left_icon3"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/icon_home_left_ticket"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="优惠卡券"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon3"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter3"
+                        app:layout_constraintTop_toTopOf="@+id/home_left_icon3" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="送优惠"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/home_left_icon3"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon3"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter3" />
+
+                    <ImageView
+                        android:id="@+id/home_left_enter3"
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/icon_entry"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.member.card.assistant.view.ShadowLayout>
+
+
+            <com.member.card.assistant.view.ShadowLayout
+                style="@style/home_shadow_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/home_left_info4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="29dp"
+                    android:paddingEnd="22dp">
+
+                    <ImageView
+                        android:id="@+id/home_left_icon4"
+                        android:layout_width="46dp"
+                        android:layout_height="46dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/icon_home_left_activity"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="商家活动宣传"
+                        android:textColor="@color/app_text_main"
+                        android:textSize="15sp"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon4"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter4"
+                        app:layout_constraintTop_toTopOf="@+id/home_left_icon4" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="营销宣传"
+                        android:textColor="@color/app_text_grey"
+                        android:textSize="14sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/home_left_icon4"
+                        app:layout_constraintLeft_toRightOf="@+id/home_left_icon4"
+                        app:layout_constraintRight_toLeftOf="@+id/home_left_enter4" />
+
+                    <ImageView
+                        android:id="@+id/home_left_enter4"
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:src="@drawable/icon_entry"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.member.card.assistant.view.ShadowLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>
