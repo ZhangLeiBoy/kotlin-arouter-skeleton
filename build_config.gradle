@@ -1,0 +1,18 @@
+ext {
+    Package_Name = "com.member.card.assistant"
+
+    App_Name = "Demo测试"
+    Version_Name = "1.0.0"
+    Version_Code = 1
+
+
+    KeyAlias = ""
+    StorePassword = ""
+    KeyPassword = ""
+
+
+    MinSdkVersion = 21
+    TargetSdkVersion = "29"
+    CompileSdkVersion = "android-R"
+
+}

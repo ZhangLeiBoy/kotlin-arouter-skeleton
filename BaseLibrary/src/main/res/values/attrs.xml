@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ShadowLayout 阴影 -->
+    <declare-styleable name="ShadowLayout">
+        <attr name="shadowColor" format="color"/>
+        <attr name="shadowRadius" format="dimension"/>
+        <attr name="shadowDx" format="dimension"/>
+        <attr name="shadowDy" format="dimension"/>
+        <attr name="shadowShape">
+            <flag name="rectangle" value="0x0001"/>
+            <flag name="oval" value="0x0010"/>
+        </attr>
+        <attr name="shadowSide">
+            <flag name="all" value="0xF"/>
+            <flag name="none" value="0x0"/>
+            <flag name="left" value="0x1"/>
+            <flag name="top" value="0x2"/>
+            <flag name="right" value="0x4"/>
+            <flag name="bottom" value="0x8"/>
+        </attr>
+        <attr name="bgColor" format="color"/>
+        <attr name="bgRadius" format="dimension"/>
+        <attr name="bgSide">
+            <flag name="all" value="0xF"/>
+            <flag name="none" value="0x0"/>
+            <flag name="left_top" value="0x1"/>
+            <flag name="right_top" value="0x2"/>
+            <flag name="right_bottom" value="0x4"/>
+            <flag name="left_bottom" value="0x8"/>
+        </attr>
+    </declare-styleable>
+
+</resources>

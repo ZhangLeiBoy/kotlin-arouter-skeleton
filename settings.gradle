@@ -1,0 +1,4 @@
+include ':app'
+include ':BaseLibrary'
+include ':ModUser'
+include ':ModHome'

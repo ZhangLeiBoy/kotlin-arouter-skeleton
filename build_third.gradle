@@ -1,0 +1,13 @@
+dependencies {
+    //沉浸式状态栏
+    // 基础依赖包，必须要依赖
+    api 'com.gyf.immersionbar:immersionbar:3.0.0'
+    // kotlin扩展（可选）
+    api 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+    //tab
+    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    //api 'com.google.android:flexbox:1.0.0'
+    api 'pub.devrel:easypermissions:0.3.0'
+    //工具类 https://blankj.com/2016/07/31/android-utils-code/
+    api 'com.blankj:utilcodex:1.28.0'
+}

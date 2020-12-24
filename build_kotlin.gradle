@@ -1,0 +1,11 @@
+dependencies {
+    //Kotlin 标准库
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    //Kotlin 反射
+    api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    //Kotlin Anko
+    api "org.jetbrains.anko:anko:$anko_version"
+    //Kotlin 协程
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+}
