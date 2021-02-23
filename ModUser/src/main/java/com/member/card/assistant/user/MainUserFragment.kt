@@ -32,7 +32,7 @@ class MainUserFragment : BaseFragment() {
         topBar.showTransparentBackground()
         topBar.removeLeftMenu()
         topBar.getTitleView().apply {
-            text = "商家中心"
+            text = "个人中心"
             textColor = ColorUtils.getColor(R.color.white)
         }
         topBar.addMenu(ActionBarConstants.setting, R.drawable.nav_setting_white)
