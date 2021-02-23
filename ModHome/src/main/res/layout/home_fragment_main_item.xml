@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="homeItem"
+            type="com.member.card.assistant.home.model.HomeItemModel" />
+    </data>
+
+
+    <com.member.card.assistant.view.ShadowLayout
+        style="@style/home_shadow_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/home_left_info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="29dp"
+            android:paddingEnd="22dp">
+
+            <ImageView
+                android:id="@+id/home_left_icon2"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/icon_home_left_vip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{homeItem.name}"
+                android:textColor="@color/app_text_main"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toRightOf="@+id/home_left_icon2"
+                app:layout_constraintRight_toLeftOf="@+id/home_left_enter2"
+                app:layout_constraintTop_toTopOf="@+id/home_left_icon2" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{homeItem.brief}"
+                android:textColor="@color/app_text_grey"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/home_left_icon2"
+                app:layout_constraintLeft_toRightOf="@+id/home_left_icon2"
+                app:layout_constraintRight_toLeftOf="@+id/home_left_enter2" />
+
+            <ImageView
+                android:id="@+id/home_left_enter2"
+                android:layout_width="8dp"
+                android:layout_height="13dp"
+                android:src="@drawable/icon_entry"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.member.card.assistant.view.ShadowLayout>
+</layout>

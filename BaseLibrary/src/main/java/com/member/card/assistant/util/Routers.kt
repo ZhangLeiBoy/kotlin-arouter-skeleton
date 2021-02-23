@@ -9,6 +9,7 @@ class RouterMain {
 class RouterHome {
     companion object{
         const val homeMain = "/home/main"
+        const val openGLTest = "/home/openGLTest"
     }
 }
 

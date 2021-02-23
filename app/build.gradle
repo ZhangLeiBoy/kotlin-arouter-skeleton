@@ -111,6 +111,9 @@ android {
         targetCompatibility 1.8
     }
 
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
